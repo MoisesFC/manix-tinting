@@ -1,25 +1,17 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Row, Col, Container } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      <Navbar expand="lg" bg="light">
-        <Container>
-          <Navbar.Brand href="#home">Manix Tinting</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Contact</Nav.Link>
-    
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <Container fluid className='header'>
+        <Row>
+          <Col xs={3} className='header-brand'>Manix Tinting</Col>
+          <Col xs={3} className='header-item'> Services</Col>
+          <Col xs={3} className='header-item'>About Us</Col>
+          <Col xs={3} className='header-item'>Appointment Booking</Col>
+        </Row>
+      </Container>
     </div>
   );
 }
