@@ -1,17 +1,29 @@
 import React from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
+import {
+  Navbar, Nav,
+  Container, Row, Col
+} from 'react-bootstrap';
+import logo from '../src/img/ManixTinginLogo.jpg'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Container fluid className='header'>
-        <Row>
-          <Col xs={3} className='header-brand'>Manix Tinting</Col>
-          <Col xs={3} className='header-item'> Services</Col>
-          <Col xs={3} className='header-item'>About Us</Col>
-          <Col xs={3} className='header-item'>Appointment Booking</Col>
-        </Row>
+    <div className='header'>
+      <Navbar bg="ligt" variant="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="#home"><img src={logo} style={{height: "145px"}}></img></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse>
+          <Nav className="m-auto">
+            <Row>
+            <Col><Nav.Link className="mr-3" href="#home">Home</Nav.Link></Col>
+            <Col><Nav.Link className="mr-3" href="#about">About</Nav.Link></Col>
+            <Col><Nav.Link className="m-auto" href="#services">Services</Nav.Link></Col>
+            <Col><Nav.Link className="m-auto" href="#contact">Contact</Nav.Link></Col>
+            </Row>
+          </Nav> 
+         </Navbar.Collapse>
       </Container>
+    </Navbar>
     </div>
   );
 }
