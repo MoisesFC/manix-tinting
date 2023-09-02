@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bannerdiv{
+  background-image: url('./img/Car+Window+Tint-1920w.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 35vw;
+}
+
+.phone-number {
+  color: white;
+  padding-top: 50%;
+  /* margin-left: 70px;  */
+}
