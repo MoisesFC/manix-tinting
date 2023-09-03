@@ -6,11 +6,12 @@ import logo from '../src/img/ManixTinginLogo.jpg';
 import Banner from './components/Banner';
 import './index.css';
 import { BsFillTelephoneOutboundFill } from 'react-icons/bs';
+import AboutUs from './components/AboutUs';
 
 
 const App = () => {
   return (
-    <div>
+    <div className='app'>
       <Navbar style={{ backgroundColor: 'rgb(38,38,38)' }} data-bs-theme="dark" collapseOnSelect expand="lg">
         <Container>
           <Navbar.Brand href="#home"><Image src={logo} height={'150px'} /></Navbar.Brand>
@@ -31,6 +32,7 @@ const App = () => {
         </Container>
       </Navbar>
       <Banner />
+      <AboutUs/>
     </div>
   )
 }
