@@ -7,6 +7,7 @@ import Banner from './components/Banner';
 import './index.css';
 import { BsFillTelephoneOutboundFill } from 'react-icons/bs';
 import AboutUs from './components/AboutUs';
+import WorkPhotos from './components/WorkPhotos';
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
       </Navbar>
       <Banner />
       <AboutUs/>
+      <WorkPhotos/>
     </div>
   )
 }

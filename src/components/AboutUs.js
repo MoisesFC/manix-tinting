@@ -9,19 +9,19 @@ const AboutUs = () => {
       <hr />
       <Accordion defaultActiveKey={['0']} alwaysOpen>
         <Accordion.Item eventKey="0">
-          <Accordion.Header className="accordion-header" style={{backgroundColor: 'green'}}>About Us</Accordion.Header>
+          <Accordion.Header className="accordion-header"><strong>About Us</strong></Accordion.Header>
           <Accordion.Body className="accordion-body">
             At Manix Tinting, we're passionate about enhancing your driving experience and ensuring the privacy, comfort, and protection of your vehicle. With our expertise in the car tinting industry, we have become a trusted name in North Atlanta for all your window tinting needs.
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header className="accordion-header">Our Mission</Accordion.Header>
+          <Accordion.Header className="accordion-header"><strong>Our Mission</strong></Accordion.Header>
           <Accordion.Body className="accordion-body">
             Our mission is simple: to provide high-quality window tinting services that exceed your expectations. We aim to transform your vehicle with the perfect balance of style, function, and performance. We take pride in delivering top-notch craftsmanship and unparalleled customer service.
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2">
-          <Accordion.Header className="accordion-header">Why Choose Us?</Accordion.Header>
+          <Accordion.Header className="accordion-header"><strong>Why Choose Us?</strong></Accordion.Header>
           <Accordion.Body className="accordion-body">
             <ul>
               <li><strong>Expertise:</strong> Our team consists of highly skilled and experienced technicians who are dedicated to delivering precision tinting solutions. We stay up-to-date with the latest industry trends and techniques to ensure your vehicle gets the best treatment. </li>
