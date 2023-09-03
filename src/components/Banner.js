@@ -12,10 +12,6 @@ const Banner = () => {
           <Carousel.Item style={{ background: 'radial-gradient(white, black, DarkBlue)' }}>
             <Container>
               <Image src={tintingImg} text="First slide" />
-              <Carousel.Caption className="carousel-caption">
-                <h3>Professional Tinting</h3>
-                <p>Experience the pinnacle of precision and expertise with our Professional Tinting Services </p>
-              </Carousel.Caption>
             </Container>
           </Carousel.Item >
           <Carousel.Item style={{ background: 'radial-gradient(white, black)' }}>
@@ -26,10 +22,6 @@ const Banner = () => {
           <Carousel.Item style={{ background: 'radial-gradient(orange, blue)' }}>
             <Container>
               <Image src={chamaleonTintImg} text="Third slide" />
-              <Carousel.Caption className="carousel-caption">
-                <h3>Chameleon Tint</h3>
-                <p>Acutting-edge technology that seamlessly adapts to different lighting conditions, adding a touch of sophistication and uniqueness to your windows.</p>
-              </Carousel.Caption>
             </Container>
           </Carousel.Item>
         </Carousel>
