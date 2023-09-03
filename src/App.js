@@ -10,6 +10,8 @@ import AboutUs from './components/AboutUs';
 import WorkPhotos from './components/WorkPhotos';
 import RequestQuote from './components/RequestQuote';
 import Footer from './components/Footer';
+import { Link } from 'react-scroll';
+
 
 const App = () => {
   return (
@@ -18,26 +20,34 @@ const App = () => {
         <Container>
           <Navbar.Brand href="#home"><Image src={logo} height={'150px'} /></Navbar.Brand>
           <Nav>
-              <Nav.Link className="d-sm-none" style={{ fontSize: '15px', fontWeight: 'bold', color: 'red' }} href="tel: +16787561826"><BsFillTelephoneOutboundFill/>  (678) 756-1826</Nav.Link>
-            </Nav>
+            <Nav.Link className="d-sm-none" style={{ fontSize: '15px', fontWeight: 'bold', color: 'red' }} href="tel: +16787561826"><BsFillTelephoneOutboundFill />  (678) 756-1826</Nav.Link>
+          </Nav>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="m-auto">
-              <Nav.Link style={{ fontSize: '28px', fontWeight: 'bold', color: 'white' }} className='m-3 custom-nav-link' href="#features">About Us</Nav.Link>
-              <Nav.Link style={{ fontSize: '28px', fontWeight: 'bold', color: 'white' }} className='m-3' href="#pricing">Work Photos</Nav.Link>
-              <Nav.Link style={{ fontSize: '28px', fontWeight: 'bold', color: 'white' }} className='m-3' href="#features">Request Quote</Nav.Link>
+              <Nav.Link><Link to="aboutUs" smooth={true} duration={200} style={{ fontSize: '28px', fontWeight: 'bold', color: 'white', textDecoration: 'none' }} className='m-3'>
+                About Us
+              </Link></Nav.Link>
+              <Nav.Link><Link to="workPhotos" smooth={true} duration={200} style={{ fontSize: '28px', fontWeight: 'bold', color: 'white', textDecoration: 'none' }} className='m-3'>
+                Work Photos
+              </Link></Nav.Link>
+              <Nav.Link><Link to="requestQuoteForm" smooth={true} duration={200} style={{ fontSize: '28px', fontWeight: 'bold', color: 'white',  }} className='m-3'>
+                Request Quote
+              </Link></Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link className="d-none d-sm-block" style={{ fontSize: '28px', fontWeight: 'bold', color: 'red' }} href="tel: +16787561826"><BsFillTelephoneOutboundFill/>  (678) 756-1826</Nav.Link>
+              <Nav.Link className="d-none d-sm-block" style={{ fontSize: '28px', fontWeight: 'bold', color: 'red' }} href="tel: +16787561826"><BsFillTelephoneOutboundFill />  (678) 756-1826</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
       <Banner />
-      <AboutUs/>
-      <WorkPhotos/>
-      <RequestQuote />
-      <Footer/>
+      <span id="aboutUs"></span>
+      <AboutUs />
+      <span id="workPhotos"></span>
+      <WorkPhotos />
+      <span id="requestQuoteForm"><RequestQuote id="requestQuoteForm" /></span>
+      <Footer />
     </div>
   )
 }
