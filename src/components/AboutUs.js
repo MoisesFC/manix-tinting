@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap';
 const AboutUs = () => {
     return(
         <>
-<Container className='pt-2'>
+<Container className='pt-5'>
       <hr />
       <Accordion defaultActiveKey={['0']} alwaysOpen>
         <Accordion.Item eventKey="0">

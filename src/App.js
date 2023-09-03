@@ -9,6 +9,7 @@ import { BsFillTelephoneOutboundFill } from 'react-icons/bs';
 import AboutUs from './components/AboutUs';
 import WorkPhotos from './components/WorkPhotos';
 import RequestQuote from './components/RequestQuote';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
       <AboutUs/>
       <WorkPhotos/>
       <RequestQuote />
+      <Footer/>
     </div>
   )
 }
