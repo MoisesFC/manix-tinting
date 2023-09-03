@@ -29,6 +29,11 @@ code {
   width: 100%;
 }
 
+.small-full-width-carousel {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .full-width-carousel .carousel-inner .carousel-item {
   width: 100%;
 }
@@ -43,9 +48,14 @@ code {
   padding: 20px; 
 }
 
-
 .bannerDiv {
   background: radial-gradient(white, black);
+}
+
+@media (max-width: 576px) {
+  .banner {
+    display: none;
+  }
 }
 
 .custom-nav-link {
