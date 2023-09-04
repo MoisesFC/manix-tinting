@@ -5,7 +5,7 @@ import {
 import logo from '../src/img/ManixTinginLogo.jpg';
 import Banner from './components/Banner';
 import './index.css';
-import { BsFillTelephoneOutboundFill } from 'react-icons/bs';
+import { BiMessageDetail } from 'react-icons/bi';
 import AboutUs from './components/AboutUs';
 import WorkPhotos from './components/WorkPhotos';
 import RequestQuote from './components/RequestQuote';
@@ -20,7 +20,7 @@ const App = () => {
         <Container>
           <Navbar.Brand href="#home"><Image style={{borderRadius: '50%'}} src={logo} height={'150px'} /></Navbar.Brand>
           <Nav>
-            <Nav.Link className="d-sm-none" style={{ fontSize: '15px', fontWeight: 'bold', color: 'red' }} href="tel: +16787561826"><BsFillTelephoneOutboundFill />  (678) 756-1826</Nav.Link>
+            <Nav.Link className="d-sm-none" style={{ fontSize: '14px', fontWeight: 'bold', color: 'red' }} href="sms: +16787561826"><BiMessageDetail />  (678) 756-1826</Nav.Link>
           </Nav>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -36,7 +36,7 @@ const App = () => {
               </Link></Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link className="d-none d-sm-block" style={{ fontSize: '28px', fontWeight: 'bold', color: 'red' }} href="tel: +16787561826"><BsFillTelephoneOutboundFill />  (678) 756-1826</Nav.Link>
+              <Nav.Link className="d-none d-sm-block" style={{ fontSize: '25px', fontWeight: 'bold', color: 'red' }} href="sms: +16787561826"><BiMessageDetail />  (678) 756-1826</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

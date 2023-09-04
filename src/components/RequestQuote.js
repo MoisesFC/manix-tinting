@@ -42,7 +42,7 @@ const RequestQuote = () => {
           <input type="phone" name="user_phone" />
           <label style={{ color: 'white', textAlign: 'center' }}>Car Make and Model</label>
           <input type="text" name="car_details" />
-          <label style={{ color: 'white', textAlign: 'center' }}>Message</label>
+          <label style={{ color: 'white', textAlign: 'center' }}>Additional Details</label>
           <textarea name="message" />
           <input className='mt-3' type="submit" value="Send" />
         </form>
