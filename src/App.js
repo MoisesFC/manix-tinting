@@ -18,7 +18,7 @@ const App = () => {
     <div className='app'>
       <Navbar style={{ backgroundColor: 'rgb(38,38,38)' }} data-bs-theme="dark" collapseOnSelect expand="lg">
         <Container>
-          <Navbar.Brand href="#home"><Image src={logo} height={'150px'} /></Navbar.Brand>
+          <Navbar.Brand href="#home"><Image style={{borderRadius: '50%'}} src={logo} height={'150px'} /></Navbar.Brand>
           <Nav>
             <Nav.Link className="d-sm-none" style={{ fontSize: '15px', fontWeight: 'bold', color: 'red' }} href="tel: +16787561826"><BsFillTelephoneOutboundFill />  (678) 756-1826</Nav.Link>
           </Nav>
