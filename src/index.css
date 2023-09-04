@@ -66,3 +66,48 @@ code {
   font-weight: bold;
   color: red;
 }
+
+/* formStyles.css */
+
+/* Center the form */
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Style form labels */
+label {
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style form inputs and textarea */
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
