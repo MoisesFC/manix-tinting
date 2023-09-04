@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { BsInstagram, BsFacebook } from 'react-icons/bs';
+import { BsInstagram, BsFacebook, BsTiktok } from 'react-icons/bs';
 
 const Footer = () => {
     return (
@@ -20,6 +20,11 @@ const Footer = () => {
                             <Col>
                                 <a href="https://www.facebook.com/profile.php?id=100071066764316" target="_blank" style={{ color: 'white', marginLeft: '10px', textDecoration: 'none'}}>
                                     <BsFacebook style={{}}/> Facebook
+                                </a>
+                            </Col>
+                            <Col>
+                                <a href="https://www.tiktok.com/@manixtinting" target="_blank" style={{ color: 'white', marginLeft: '10px', textDecoration: 'none'}}>
+                                    <BsTiktok style={{}}/> TikTok
                                 </a>
                             </Col>
                             <Col></Col>
