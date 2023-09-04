@@ -31,7 +31,7 @@ const App = () => {
               <Nav.Link><Link to="workPhotos" smooth={true} duration={200} style={{ fontSize: '28px', fontWeight: 'bold', color: 'white', textDecoration: 'none' }} className='m-3'>
                 Work Photos
               </Link></Nav.Link>
-              <Nav.Link><Link to="requestQuoteForm" smooth={true} duration={200} style={{ fontSize: '28px', fontWeight: 'bold', color: 'white',  }} className='m-3'>
+              <Nav.Link><Link to="requestQuoteForm" smooth={true} duration={200} style={{ fontSize: '28px', fontWeight: 'bold', color: 'white', textDecoration: 'none' }} className='m-3'>
                 Request Quote
               </Link></Nav.Link>
             </Nav>
