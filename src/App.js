@@ -38,20 +38,21 @@ const App = () => {
                 Request Quote
               </Link></Nav.Link>
               <hr style={{color: 'white'}}/>
-              <Row className="d-sm-none p-3">
+              <Row className="d-sm-none pt-3 pb-3" style={{textAlign: "center"}}>
                             <Col>
                                 <a href="https://www.instagram.com/manixtinting/" target="_blank" style={{ marginLeft: '10px', textDecoration: 'none'}}>
-                                    <BsInstagram /> Instagram
+                                    <BsInstagram /><br/> Instagram
                                 </a>
                             </Col>
                             <Col>
                                 <a href="https://www.facebook.com/profile.php?id=100071066764316" target="_blank" style={{ marginLeft: '10px', textDecoration: 'none'}}>
-                                    <BsFacebook style={{}}/> Facebook
+                                    <BsFacebook style={{}}/><br/> Facebook
                                 </a>
                             </Col>
                             <Col>
                                 <a href="https://www.tiktok.com/@manixtinting" target="_blank" style={{marginLeft: '10px', textDecoration: 'none'}}>
-                                    <BsTiktok style={{}}/> TikTok
+                                    <BsTiktok style={{}}/> <br/>
+                                    TikTok
                                 </a>
                             </Col>
                         </Row>
