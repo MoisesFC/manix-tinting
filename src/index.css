@@ -111,3 +111,6 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.navToggler{
+  outline: none;
+}
