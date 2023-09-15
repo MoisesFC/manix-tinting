@@ -37,14 +37,14 @@ const RequestQuote = () => {
           <label style={{ color: 'white', textAlign: 'center' }}>Name</label>
           <input required type="text" name="user_name" />
           <label required style={{ color: 'white', textAlign: 'center' }}>Email</label>
-          <input type="email" name="user_email" />
+          <input required type="email" name="user_email" />
           <label required style={{ color: 'white', textAlign: 'center' }}>Phone</label>
-          <input type="phone" name="user_phone" />
+          <input required type="phone" name="user_phone" />
           <label style={{ color: 'white', textAlign: 'center' }}>Car Make and Model</label>
           <input type="text" name="car_details" />
           <label style={{ color: 'white', textAlign: 'center' }}>Additional Details</label>
           <textarea name="message" />
-          <input className='mt-3' type="submit" value="Send" />
+          <input  className='mt-3' type="submit" value="Send" />
         </form>
 
         <Modal show={showModal} onHide={() => setShowModal(false)} backdrop="static">
